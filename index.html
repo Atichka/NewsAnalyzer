@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>NewsAnalyzer</title>
+	<link rel="stylesheet" href="./vendor/fonts.css">
+	<link rel="stylesheet" href="./vendor/normalize.css">
+	<link rel="stylesheet" href="./pages/index.css">
+	<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+	<div class="page">
+		<section class="search">
+			<picture class="search__pic-container">
+				<source class="search__image" media="(max-width: 320px)" srcset="./images/main-pic320.png">
+				<source class="search__image" media="(max-width: 768px)" srcset="./images/main-pic768.png">
+				<img class="search__image" src="./images/main-pic.png" alt="Что творится в мире?">
+			</picture>
+			<header class="header header__page">
+				<a href="./index.html" class="header__logo header__logo_white">NewsAnalyzer</a>
+				<ul class="menu">
+					<li class="menu__item">
+						<a href="./index.html" class="menu__page menu__white menu__action-white">Главная</a>
+					</li>
+					<li class="menu__item">
+						<a href="./about.html" class="menu__about menu__grey">О проекте</a>
+					</li>
+				</ul>
+			</header>
+			<div class="search__container">
+				<h1 class="search__title">Что в мире творится?</h1>
+				<p class="search__label">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
+					прошедшую неделю.</p>
+				<form novalidate class="search__search-field">
+					<input class="search__input" type="text" placeholder="Введите тему новости" required />
+					<button class="search__button">Искать</button>
+				</form>
+			</div>
+		</section>
+		<div class="preloader">
+			<i class="preloader__circle"></i>
+			<p class="preloader__message">Идет поиск новостей...</p>
+		</div>
+		<div class="not-found">
+			<img class="not-found__pic" src="./images/not-found.png" alt="Ничего не найдено">
+			<h2 class="not-found__title">Ничего не найдено</h2>
+			<p class="not-found__text">К сожалению по вашему запросу ничего не найдено.</p>
+		</div>
+		<div class="search-result">
+			<div class="search-result__container">
+				<h2 class="search-result__title">Результаты поиска</h2>
+				<a class="search-result__link" href="./analitic.html">Посмотреть аналитику
+					<img class="search-result__pic" src="./images/back.png" alt="Посмотреть аналитику">
+				</a>
+			</div>
+			<div class="card-list">
+				<div class="card">
+					<div class="card__image"></div>
+					<div class="card__text">
+						<h3 class="card__date"></h3>
+						<h2 class="card__title"></h2>
+						<p class="card__paragraph"></p>
+						<p class="card__link"></p>
+					</div>
+        </div>
+			</div>
+			<div class="search-result__more-cards">
+				<button type="button" class="search-result__button">Показать еще</button>
+			</div>
+		</div>
+		<section class="about-author">
+			<img class="about-author__avatar" src="./images/author-avatar.jpg" alt="Фотография автора">
+			<div class="about-author__container">
+				<h2 class="title">Об авторе</h2>
+				<p class="paragraph">Здравствуйте! Меня зовут Бурыгина Екатерина, по образованию я инженер-программист. Прошла
+					курс фронтенд-разработки Яндекс.Практикума. В процессе обучения научилась использовать технологии, такие как
+					CSS, HTML, JS, GIT и Webpack.</p>
+			</div>
+		</section>
+		<footer class="footer">
+			<p class="footer__copyright">&#169; 2020 Supersite</p>
+			<ul class="footer__list-item">
+				<li><a href="./index.html" class="footer__list-links">Главная</a></li>
+				<li><a href="./about.html" class="footer__list-links">О проекте</a></li>
+				<li><a href="https://praktikum.yandex.ru/profile/frontend-developer/"
+						class="footer__list-links">Яндекс.Практикум</a></li>
+			</ul>
+			<ul class="footer__list-item-block">
+				<li><a href="https://www.facebook.com" class="footer__column-links">
+						<img src="./images/fb.png" class="footer__icons" alt="Facebook">
+					</a></li>
+				<li><a href="https://github.com" class="footer__column-links">
+						<img src="./images/github.png" class="footer__icons" alt="GitHub">
+					</a></li>
+			</ul>
+		</footer>
+	</div>
+	<script src="./script.js"></script>
+</body>
+</html>
