@@ -1,0 +1,36 @@
+.search__button {
+  width: 168px;
+	height: 64px;
+	margin-left: 60px;
+
+	background: #2F71E5;
+	box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+	border-radius: 100px;
+
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+
+	color: #FFFFFF;
+	cursor: url(../../../images/Pointer.png), pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .search__button {
+    width: 160px;
+    height: 56px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .search__button {
+    position: relative;
+    width: 288px;
+    height: 56px;
+    margin-left: 0;
+    margin-top: 16px;
+  }
+}

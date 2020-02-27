@@ -1,0 +1,42 @@
+.menu__about {
+	height: 100%;
+
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	text-decoration: none;
+	cursor: url(../../../images/Pointer.png), pointer;
+}
+
+.menu__about:hover {
+	transition: opacity 0.3s;
+	opacity: 0.8;
+}
+
+@media screen and (max-width: 1440px) {
+  .menu__about {
+    margin-right: 101px;
+    font-size: 1.125rem;
+	  line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu__about {
+    margin-right: 42px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .menu__about {
+    margin-right: 14px;
+    font-size: 1rem;
+	  line-height: 1.5rem;
+  }
+}

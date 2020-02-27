@@ -1,0 +1,22 @@
+.footer__list-item-block {
+  /* border: 1px solid red; */
+  margin: 30px 0 28px 250px;
+  padding: 0;
+
+  display: flex;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__list-item-block {
+    display: flex;
+    margin: 26px 42px 23px 63px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer__list-item-block {
+    position: absolute;
+    margin: 10px 0 202px 203px;
+  }
+}

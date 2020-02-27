@@ -1,0 +1,29 @@
+.search__search-field {
+  width: 608px;
+	height: 64px;
+	margin-left: 416px;
+  margin-top: 64px;
+
+	background: #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .search__search-field {
+    width: 452px;
+    height: 56px;
+    margin-left: 160px;
+    margin-top: 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .search__search-field {
+    width: 288px;
+    height: 156px;
+    margin-left: 16px;
+    margin-top: 24px;
+    background: none;
+  }
+}

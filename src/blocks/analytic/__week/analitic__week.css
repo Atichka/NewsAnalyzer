@@ -1,0 +1,16 @@
+.analitic__week {
+  /* border: 1px solid red; */
+  margin: 80px 624px 80px 104px;
+}
+
+@media screen and (max-width: 768px) {
+  .analitic__week {
+    margin: 64px 40px 40px 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .analitic__week {
+    margin: 16px 16px 16px 24px;
+  }
+}

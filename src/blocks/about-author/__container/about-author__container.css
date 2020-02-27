@@ -1,0 +1,16 @@
+.about-author__container {
+	/* border: 1px solid red; */
+	margin: 131px 216px 255px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .about-author__container {
+    margin: 42px 40px 0 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about-author__container {
+    margin: 24px 16px 44px 16px;
+  }
+}

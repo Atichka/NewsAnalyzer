@@ -1,0 +1,20 @@
+.analytic__name {
+  /* border: 1px solid red; */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin: 0 0 24px 0;
+
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+
+  color: #B6BCBF;
+}
+
+@media screen and (max-width: 768px) {
+  .analytic__name {
+    margin: 0 0px 8px 0;
+  }
+}

@@ -1,0 +1,19 @@
+.history__container {
+  /* border: 1px solid red; */
+  margin: 72px 111.59px 0 104px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .history__container {
+    margin: 40px 0 32px 40px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .history__container {
+    margin: 32px 16px 16px 16px;
+  }
+}

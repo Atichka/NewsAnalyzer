@@ -1,0 +1,10 @@
+.history__swiper-slide {
+  border: 1px solid red;
+  max-width: 30%;
+  /* height: 100%;
+  margin-left: 16px; */
+
+  background: #FFFFFF;
+  border-radius: 16px;
+}
+

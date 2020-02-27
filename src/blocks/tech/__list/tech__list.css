@@ -1,0 +1,22 @@
+.tech__list {
+	/* border: 1px solid red; */
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+  padding: 0 0 0 0;
+  margin-left: 192px;
+}
+
+@media screen and (max-width: 768px) {
+  .tech__list {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tech__list {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 144px 1fr;
+  }
+}

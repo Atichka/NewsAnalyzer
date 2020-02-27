@@ -1,0 +1,34 @@
+.search__label {
+  width: 545px;
+	height: 48px;
+	margin-left: 416px;
+	margin-top: 32px;
+
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+
+	color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  .search__label {
+    width: 452px;
+    height: 72px;
+    margin-left: 160px;
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .search__label {
+    width: 288px;
+    height: 130px;
+    margin-left: 16px;
+    margin-top: 56px;
+    font-size: 1.25rem;
+	  line-height: 1.625rem;
+  }
+}

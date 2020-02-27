@@ -1,0 +1,18 @@
+.analytic__row-param {
+  height: 40px;
+  margin: 16px 0 0 91px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .analytic__row-param {
+    margin: 16px 0 0 81px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .analytic__row-param {
+    display: none;
+  }
+}

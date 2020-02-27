@@ -1,0 +1,20 @@
+.tech__container {
+  /* border: 1px solid red; */
+  margin: 80px 216px 97px 104px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .tech__container {
+    margin: 40px 56px 54px 40px;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .tech__container {
+    margin: 32px 16px 52px 16px;
+  }
+}

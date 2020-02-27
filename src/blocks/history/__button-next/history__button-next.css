@@ -1,0 +1,4 @@
+.history__button-next {
+  transform: rotate(180deg);
+  right: 24px;
+}

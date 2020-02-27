@@ -1,0 +1,9 @@
+.analytic__table-first-column {
+  width: 91px;
+}
+
+@media screen and (max-width: 320px) {
+  .analytic__table-first-column {
+    width: 120px;
+  }
+}

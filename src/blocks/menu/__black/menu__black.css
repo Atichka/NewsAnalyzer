@@ -1,0 +1,6 @@
+.menu__black {
+  color: #1A1B22;
+
+  text-decoration: none;
+	cursor: url(../../../images/Pointer.png), pointer;
+}

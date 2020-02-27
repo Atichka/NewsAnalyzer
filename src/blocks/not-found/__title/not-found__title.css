@@ -1,0 +1,24 @@
+.not-found__title {
+  width: 356px;
+	height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+	margin-top: 200px;
+
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.625rem;
+	line-height: 1.875rem;
+
+	text-align: center;
+
+	color: #1A1B22;
+}
+
+@media screen and (max-width: 768px) {
+  .not-found__title {
+    font-size: 1.125rem;
+	  line-height: 1.5rem;
+  }
+}

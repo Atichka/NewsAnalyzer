@@ -1,0 +1,37 @@
+.header__logo {
+  margin-left: 104px;
+	margin-top: auto;
+	margin-bottom: auto;
+
+	font-family: 'Roboto Slab';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	display: flex;
+	align-items: center;
+
+	text-decoration: none;
+	cursor: url(../../../images/Pointer.png), pointer;
+}
+
+.header__logo:hover {
+	transition: opacity 0.3s;
+	opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    margin-left: 40px;
+    font-size: 1.25rem;
+	  line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__logo {
+    margin-left: 16px;
+    font-size: 1rem;
+	  line-height: 1.5rem;
+  }
+}

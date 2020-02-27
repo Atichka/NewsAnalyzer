@@ -1,0 +1,35 @@
+.search-result__button {
+	width: 288px;
+	height: 64px;
+	margin: auto;
+
+  margin-left: auto;
+  margin-right: auto;
+
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+
+	display: flex;
+	justify-content: center;
+
+	color: #1A1B22;
+	background: #FFFFFF;
+	border-radius: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .search-result__button {
+    width: 240px;
+    height: 56px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .search-result__button {
+    width: 288px;
+    height: 56px;
+  }
+}
