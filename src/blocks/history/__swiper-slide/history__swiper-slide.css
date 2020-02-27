@@ -1,10 +1,25 @@
 .history__swiper-slide {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   max-width: 30%;
-  /* height: 100%;
-  margin-left: 16px; */
+  height: 288px;
+  margin-left: 16px;
 
   background: #FFFFFF;
   border-radius: 16px;
 }
 
+@media screen and (max-width: 768px) {
+  .history__swiper-slide {
+    max-width: 40%;
+    height: 242px;
+    margin-left: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .history__swiper-slide {
+    max-width: 99%;
+    height: 264px;
+    margin-left: 0;
+  }
+}

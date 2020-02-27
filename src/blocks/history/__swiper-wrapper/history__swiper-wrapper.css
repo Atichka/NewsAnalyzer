@@ -1,18 +1,12 @@
 .history__swiper-wrapper {
-  /* border: 1px solid red;
-  margin-left: 104px;
-  margin-right: 104px;
-  justify-content: space-between;
-  display: flex; */
-  margin-top: 64px;
+  /* border: 1px solid red; */
   display: grid;
   grid-template-columns: repeat(3, calc((100% - 240px) / 3));
   justify-content: center;
   grid-gap: 16px;
+  padding-bottom: 48px;
   grid-auto-flow: column;
-    padding-bottom: 48px;
-    position: relative;
-    justify-content: flex-start;
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {

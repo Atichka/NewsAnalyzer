@@ -1,3 +1,9 @@
 .history__button-prev {
   left: 24px;
 }
+
+@media screen and (max-width: 768px) {
+  .history__button-prev {
+    display: none;
+  }
+}
