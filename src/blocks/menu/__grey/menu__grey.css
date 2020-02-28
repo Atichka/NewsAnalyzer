@@ -4,3 +4,8 @@
   text-decoration: none;
 	cursor: url(../../../images/Pointer.png), pointer;
 }
+
+.menu__grey:hover {
+	transition: opacity 0.3s;
+	opacity: 0.8;
+}

@@ -15,6 +15,11 @@
 	cursor: url(../../../images/Pointer.png), pointer;
 }
 
+.footer__list-links:hover {
+	transition: opacity 0.3s;
+	opacity: 0.8;
+}
+
 @media screen and (max-width: 768px) {
   .footer__list-links {
     margin-left: 20px;

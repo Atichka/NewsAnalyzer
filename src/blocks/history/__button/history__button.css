@@ -28,3 +28,8 @@
     cursor: url(../../../images/Pointer.png), pointer;
   }
 }
+
+.history__button:hover {
+	transition: opacity 0.3s;
+	opacity: 0.8;
+}

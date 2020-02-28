@@ -17,6 +17,11 @@
 	cursor: url(../../../images/Pointer.png), pointer;
 }
 
+.search__button:hover {
+	transition: opacity 0.3s;
+	opacity: 0.8;
+}
+
 @media screen and (max-width: 768px) {
   .search__button {
     width: 160px;
