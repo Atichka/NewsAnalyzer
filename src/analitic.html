@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewsAnalyzer</title>
-  <link rel="stylesheet" href="./vendor/fonts.css">
-  <link rel="stylesheet" href="./vendor/normalize.css">
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 
@@ -108,8 +106,7 @@
   </footer>
   </div>
   </div>
-  <script src="./script.js"></script>
-  <script src="../node_modules/swiper/js/swiper.min.js"></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>""></script>
 </body>
 
 </html>

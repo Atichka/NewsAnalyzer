@@ -6,11 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewsAnalyzer</title>
-  <link rel="stylesheet" href="./vendor/fonts.css">
-  <link rel="stylesheet" href="./vendor/normalize.css">
-  <link rel="stylesheet" href="./pages/index.css">
-  <link rel="stylesheet" href="../node_modules/swiper/css/swiper.min.css">
-  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="icon" href="<%=require('./images/favicon.ico')%>" type="image/x-icon">
 </head>
 
 <body>
@@ -48,25 +46,25 @@
         <ul class="tech__list">
           <li class="tech__instrument">
             <h3 class="tech__name">HTML</h3>
-            <img class="tech__logo" src="./images/html.png" alt="HTML">
+            <img class="tech__logo" src="<%=require('./images/html.png')%>" alt="HTML">
           </li>
           <li class="tech__instrument">
             <h3 class="tech__name">CSS</h3>
-            <img class="tech__logo" src="./images/css.png" alt="CSS">
+            <img class="tech__logo" src="<%=require('./images/css.png')%>" alt="CSS">
           </li>
           <li class="tech__instrument">
             <h3 class="tech__name">Java Script</h3>
-            <img class="tech__logo" src="./images/js.png" alt="Java Script">
+            <img class="tech__logo" src="<%=require('./images/js.png')%>" alt="Java Script">
           </li>
           <li class="tech__instrument">
             <h3 class="tech__name">Webpack</h3>
-            <img class="tech__logo" src="./images/webpack.png" alt="Webpack">
+            <img class="tech__logo" src="<%=require('./images/webpack.png')%>" alt="Webpack">
           </li>
         </ul>
       </div>
     </section>
     <section class="about-author">
-      <img class="about-author__avatar" src="./images/author-avatar.jpg" alt="Фотография автора">
+      <img class="about-author__avatar" src="<%=require('./images/author-avatar.jpg')%>" alt="Фотография автора">
       <div class="about-author__container">
         <h2 class="title">Об авторе</h2>
         <p class="paragraph">Здравствуйте! Меня зовут Бурыгина Екатерина, по образованию я инженер-программист. Прошла
@@ -78,7 +76,7 @@
       <div class="history__container">
         <h2 class="history__title">История коммитов из GitHub</h2>
         <a class="history__link" href="https://github.com/Atichka/NewsAnalyzer/commits/master">Открыть в Github
-          <img class="search-result__pic" src="./images/back.png" alt="Открыть в Github">
+          <img class="search-result__pic" src="<%=require('./images/back.png')%>" alt="Открыть в Github">
         </a>
       </div>
       <div class="swiper-container">
@@ -86,7 +84,7 @@
           <div class="swiper-slide history__swiper-slide">
             <p class="history__date">19.11.2020</p>
             <div class="history__main">
-              <img src="./images/author-avatar.jpg" alt="Аватар пользователя" class="history__avatar">
+              <img src="<%=require('./images/author-avatar.jpg')%>" alt="Аватар пользователя" class="history__avatar">
               <div class="history__head">
                 <p class="history__name">Бурыгина Екатерина</p>
                 <p class="history__mail">mail.ru</p>
@@ -113,17 +111,17 @@
       </ul>
       <ul class="footer__list-item-block">
         <li><a href="https://www.facebook.com" class="footer__column-links">
-            <img src="./images/fb.png" class="footer__icons" alt="Facebook">
+            <img src="<%=require('./images/fb.png')%>" class="footer__icons" alt="Facebook">
           </a></li>
         <li><a href="https://github.com" class="footer__column-links">
-            <img src="./images/github.png" class="footer__icons" alt="GitHub">
+            <img src="<%=require('./images/github.png')%>" class="footer__icons" alt="GitHub">
           </a></li>
       </ul>
     </footer>
   </div>
   </div>
-  <script src="./script.js"></script>
-  <script src="../node_modules/swiper/js/swiper.min.js"></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>""></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script>
     var mySwiper = new Swiper('.swiper-container', {
       direction: 'horizontal',
