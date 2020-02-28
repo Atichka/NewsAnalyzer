@@ -1,6 +1,6 @@
 .analytic__table {
   /* border: 1px solid red; */
-  width: 90%;
+  max-width: 90%;
   margin: 12px 0 0 104px;
 }
 

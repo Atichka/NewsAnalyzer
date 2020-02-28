@@ -1,20 +1,4 @@
 .history__swiper-pagination {
-    /* border: 1px solid red; */
-    /* height: 10px; */
-    /* width: 100%; */
     display: flex;
     justify-content: center;
-    /* position: relative; */
-    /* margin-top: 1%; */
-  }
-
-  @media screen and (max-width: 768px) {
-    .history__swiper-pagination {
-      /* border: 1px solid red;
-      height: 10px;
-      display: flex;
-      justify-content: center; */
-      /* position: relative; */
-      /* margin-top: 1%; */
-    }
   }
