@@ -1,7 +1,6 @@
 .history__swiper-container {
   position: relative;
   display: flex;
-  justify-content: center;
   margin-top: 64px;
   height: 288px;
 }

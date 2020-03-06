@@ -6,7 +6,7 @@
   .history__button {
     width: 288px;
     height: 56px;
-    margin: 24px auto 32px auto;
+    margin: 24px auto auto auto;
 
     border: 1px solid #1A1B22;
     box-sizing: border-box;
@@ -22,7 +22,7 @@
     justify-content: center;
 
     color: #1A1B22;
-
+    text-decoration: none;
 
 
     cursor: url(../../../images/Pointer.png), pointer;
