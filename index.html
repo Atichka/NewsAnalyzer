@@ -2,84 +2,94 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>NewsAnalyzer</title>
-	<link rel="stylesheet" href="./styles/style.e433cc7e0cb4272fb387.css">
-	<link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NewsAnalyzer</title>
+  <link rel="stylesheet" href="./styles/style.8a72d950dca3b6347e8d.css">
+  <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-	<div class="page">
-		<section class="search">
-			<picture class="search__pic-container">
-				<source class="search__image" media="(max-width: 320px)" srcset="./images/main-pic320.png">
-				<source class="search__image" media="(max-width: 768px)" srcset="./images/main-pic768.png">
-				<img class="search__image" src="./images/main-pic.png" alt="Что творится в мире?">
-			</picture>
-			<header class="header header__page">
-				<a href="./index.html" class="header__logo header__logo_white">NewsAnalyzer</a>
-				<ul class="menu">
-					<li class="menu__item">
-						<a href="./index.html" class="menu__page menu__white menu__action-white">Главная</a>
-					</li>
-					<li class="menu__item">
-						<a href="./about.html" class="menu__about menu__grey">О проекте</a>
-					</li>
-				</ul>
-			</header>
-			<div class="search__container">
-				<h1 class="search__title">Что в мире творится?</h1>
-				<p class="search__label">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
-					прошедшую неделю.</p>
-				<form novalidate class="search__search-field">
-					<input class="search__input" type="text" placeholder="Введите тему новости" required />
-					<button class="search__button">Искать</button>
-				</form>
-			</div>
-		</section>
-		<div class="preloader">
-			<i class="preloader__circle"></i>
-			<p class="preloader__message">Идет поиск новостей...</p>
-		</div>
-		<div class="not-found">
-			<img class="not-found__pic" src="./images/not-found.png" alt="Ничего не найдено">
-			<h2 class="not-found__title">Ничего не найдено</h2>
-			<p class="not-found__text">К сожалению по вашему запросу ничего не найдено.</p>
-		</div>
-		<div class="search-result">
-			<div class="search-result__container">
-				<h2 class="search-result__title">Результаты поиска</h2>
-				<a class="search-result__link" href="./analitic.html">Посмотреть аналитику
-					<img class="search-result__pic" src="./images/back.png" alt="Посмотреть аналитику">
-				</a>
-			</div>
-			<div class="card-list">
-				<div class="card">
-					<div class="card__image"></div>
-					<div class="card__text">
-						<h3 class="card__date"></h3>
-						<h2 class="card__title"></h2>
-						<p class="card__paragraph"></p>
-						<p class="card__link"></p>
-					</div>
+  <div class="page">
+    <section class="search">
+      <header class="header header__page">
+        <a href="./index.html" class="header__logo header__logo_white">NewsAnalyzer</a>
+        <div class="menu">
+          <li class="menu__item menu__action-white"><a href="./index.html" class="menu__page menu__white">Главная</a>
+          </li>
+          <li class="menu__item"><a href="./about.html" class="menu__page menu__grey">О проекте</a></li>
         </div>
-			</div>
-			<div class="search-result__more-cards">
-				<button type="button" class="search-result__button">Показать еще</button>
-			</div>
-		</div>
-		<section class="about-author">
-			<img class="about-author__avatar" src="./images/author-avatar.jpg" alt="Фотография автора">
-			<div class="about-author__container">
-				<h2 class="title">Об авторе</h2>
-				<p class="paragraph">Здравствуйте! Меня зовут Бурыгина Екатерина, по образованию я инженер-программист. Прошла
-					курс фронтенд-разработки Яндекс.Практикума. В процессе обучения научилась использовать технологии, такие как
-					CSS, HTML, JS, GIT и Webpack.</p>
-			</div>
-		</section>
-		<footer class="footer">
+      </header>
+      <h1 class="search__title">Что в мире <br> творится?</h1>
+      <p class="search__label">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
+        прошедшую неделю.</p>
+      <form class="search__search-field" name="search">
+        <input class="search__input" type="text" placeholder="Введите тему новости" required />
+        <button class="search__button">Искать</button>
+      </form>
+    </section>
+    <div class="preloader">
+      <i class="preloader__circle"></i>
+      <p class="preloader__message">Идет поиск новостей...</p>
+    </div>
+    <div class="not-found">
+      <img class="not-found__pic" src="./images/not-found.png" alt="Ничего не найдено">
+      <h2 class="not-found__title">Ничего не найдено</h2>
+      <p class="not-found__text">К сожалению по вашему запросу ничего не найдено.</p>
+    </div>
+    <div class="search-result">
+      <div class="search-result__container">
+        <h2 class="search-result__title">Результаты поиска</h2>
+        <a class="search-result__link" href="./analytic.html">Посмотреть аналитику
+          <img class="search-result__pic" src="./images/back.png" alt="Посмотреть аналитику">
+        </a>
+      </div>
+      <div class="card-list">
+        <div class="card">
+          <img class="card__image" alt="Описание фотографии">
+          <div class="card__text">
+            <h3 class="card__date"></h3>
+            <h2 class="card__title"></h2>
+            <p class="card__paragraph"></p>
+            <p class="card__link"></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__image" alt="Описание фотографии">
+          <div class="card__text">
+            <h3 class="card__date"></h3>
+            <h2 class="card__title"></h2>
+            <p class="card__paragraph"></p>
+            <p class="card__link"></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__image" alt="Описание фотографии">
+          <div class="card__text">
+            <h3 class="card__date"></h3>
+            <h2 class="card__title"></h2>
+            <p class="card__paragraph"></p>
+            <p class="card__link"></p>
+          </div>
+        </div>
+      </div>
+      <div class="search-result__more-cards">
+        <button type="button" class="search-result__button">Показать еще</button>
+      </div>
+    </div>
+    <section class="about-author">
+      <div class="about-author__container">
+        <img class="about-author__avatar" src="./images/author-avatar.jpg" alt="Фотография автора">
+        <div class="about-author__container-text">
+          <h2 class="title">Об авторе</h2>
+          <p class="paragraph">Здравствуйте! Меня зовут Бурыгина Екатерина, по образованию я инженер-программист. Прошла
+            курс фронтенд-разработки Яндекс.Практикума. В процессе обучения научилась использовать технологии, такие как
+            CSS, HTML, JS, GIT и Webpack.</p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
 			<p class="footer__copyright">&#169; 2020 Supersite</p>
 			<ul class="footer__list-item">
 				<li><a href="./index.html" class="footer__list-links">Главная</a></li>
@@ -96,7 +106,7 @@
 					</a></li>
 			</ul>
 		</footer>
-	</div>
-	<script src="scripts/main.ab0dcde76bdc6234be7b.js""></script>
+  </div>
+  <script src="scripts/index.ab0dcde76bdc6234be7b.js""></script>
 </body>
 </html>

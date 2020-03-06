@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewsAnalyzer</title>
-  <link rel="stylesheet" href="./styles/style.e433cc7e0cb4272fb387.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="./styles/style.d4471fd9be9b6397c9a7.css">
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 
@@ -16,11 +15,9 @@
     <header class="header header__about">
       <a href="./index.html" class="header__logo header__logo_black">NewsAnalyzer</a>
       <ul class="menu">
-        <li class="menu__item">
-          <a href="./index.html" class="menu__page menu__grey">Главная</a>
+        <li class="menu__item"><a href="./index.html" class="menu__page menu__grey">Главная</a>
         </li>
-        <li class="menu__item">
-          <a href="./about.html" class="menu__about menu__black menu__action-black">О проекте</a>
+        <li class="menu__item menu__action-black"><a href="./about.html" class="menu__about menu__black">О проекте</a>
         </li>
       </ul>
     </header>
@@ -64,12 +61,14 @@
       </div>
     </section>
     <section class="about-author">
-      <img class="about-author__avatar" src="./images/author-avatar.jpg" alt="Фотография автора">
       <div class="about-author__container">
-        <h2 class="title">Об авторе</h2>
-        <p class="paragraph">Здравствуйте! Меня зовут Бурыгина Екатерина, по образованию я инженер-программист. Прошла
-          курс фронтенд-разработки Яндекс.Практикума. В процессе обучения научилась использовать технологии, такие как
-          CSS, HTML, JS, GIT и Webpack.</p>
+        <img class="about-author__avatar" src="./images/author-avatar.jpg" alt="Фотография автора">
+        <div class="about-author__container-text">
+          <h2 class="title">Об авторе</h2>
+          <p class="paragraph">Здравствуйте! Меня зовут Бурыгина Екатерина, по образованию я инженер-программист. Прошла
+            курс фронтенд-разработки Яндекс.Практикума. В процессе обучения научилась использовать технологии, такие как
+            CSS, HTML, JS, GIT и Webpack.</p>
+        </div>
       </div>
     </section>
     <section class="history">
@@ -79,7 +78,7 @@
           <img class="search-result__pic" src="./images/back.png" alt="Открыть в Github">
         </a>
       </div>
-      <div class="swiper-container">
+      <div class="swiper-container history__swiper-container">
         <div class="swiper-wrapper history__swiper-wrapper">
           <div class="swiper-slide history__swiper-slide">
             <p class="history__date">19.11.2020</p>
@@ -92,14 +91,36 @@
             </div>
             <p class="history__text">Текст</p>
           </div>
+          <div class="swiper-slide history__swiper-slide">
+            <p class="history__date">19.11.2020</p>
+            <div class="history__main">
+              <img src="./images/author-avatar.jpg" alt="Аватар пользователя" class="history__avatar">
+              <div class="history__head">
+                <p class="history__name">Екатерина</p>
+                <p class="history__mail">mail.ru</p>
+              </div>
+            </div>
+            <p class="history__text">Текст</p>
+          </div>
+          <div class="swiper-slide history__swiper-slide">
+            <p class="history__date">19.11.2020</p>
+            <div class="history__main">
+              <img src="./images/author-avatar.jpg" alt="Аватар пользователя" class="history__avatar">
+              <div class="history__head">
+                <p class="history__name">Бурыгина</p>
+                <p class="history__mail">mail.ru</p>
+              </div>
+            </div>
+            <p class="history__text">Текст</p>
+          </div>
         </div>
-        <div class="swiper-pagination"></div>
         <div class="history__slider-control history__button-prev"></div>
         <div class="history__slider-control history__button-next"></div>
       </div>
-      <form action="https://github.com/Atichka" method="GET" target="_blank"></form>
-          <button class="history__button">Открыть в GitHub</button>
-      </form>
+      <div class="history__swiper-pagination swiper-pagination"></div>
+      <a href="https://github.com/Atichka" class="history__link-button">
+        <button class="history__button">Открыть в GitHub</button>
+      </a>
     </section>
     <footer class="footer">
       <p class="footer__copyright">&#169; 2020 Supersite</p>
@@ -119,25 +140,7 @@
       </ul>
     </footer>
   </div>
-  </div>
-  <script src="scripts/main.ab0dcde76bdc6234be7b.js""></script>
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <script>
-    var mySwiper = new Swiper('.swiper-container', {
-      direction: 'horizontal',
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-      },
-      navigation: {
-        nextEl: '.history__button-next',
-        prevEl: '.history__button-prev',
-      },
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-    })
-  </script>
+  <script src="scripts/about.c20c3019e01cde1b04f1.js""></script>
 </body>
 
 </html>
