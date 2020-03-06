@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewsAnalyzer</title>
-  <link rel="stylesheet" href="./styles/style.8a72d950dca3b6347e8d.css">
+  <link rel="stylesheet" href="./styles/style.0f13d6390a479e3a5a19.css">
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 
@@ -15,17 +15,18 @@
     <section class="search">
       <header class="header header__page">
         <a href="./index.html" class="header__logo header__logo_white">NewsAnalyzer</a>
-        <div class="menu">
+        <ul class="menu">
           <li class="menu__item menu__action-white"><a href="./index.html" class="menu__page menu__white">Главная</a>
           </li>
           <li class="menu__item"><a href="./about.html" class="menu__page menu__grey">О проекте</a></li>
-        </div>
+        </ul>
       </header>
       <h1 class="search__title">Что в мире <br> творится?</h1>
       <p class="search__label">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
         прошедшую неделю.</p>
       <form class="search__search-field" name="search">
-        <input class="search__input" type="text" placeholder="Введите тему новости" required />
+        <input class="search__input" type="text" placeholder="Введите тему новости" minlength='2' maxlength="20" required/>
+        <span id="inputError" class="seach__error"></span>
         <button class="search__button">Искать</button>
       </form>
     </section>
@@ -46,33 +47,15 @@
         </a>
       </div>
       <div class="card-list">
-        <div class="card">
-          <img class="card__image" alt="Описание фотографии">
+        <!-- <div class="card">
+          <img class="card__image" src="" alt="Описание фотографии">
           <div class="card__text">
             <h3 class="card__date"></h3>
             <h2 class="card__title"></h2>
             <p class="card__paragraph"></p>
             <p class="card__link"></p>
           </div>
-        </div>
-        <div class="card">
-          <img class="card__image" alt="Описание фотографии">
-          <div class="card__text">
-            <h3 class="card__date"></h3>
-            <h2 class="card__title"></h2>
-            <p class="card__paragraph"></p>
-            <p class="card__link"></p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="card__image" alt="Описание фотографии">
-          <div class="card__text">
-            <h3 class="card__date"></h3>
-            <h2 class="card__title"></h2>
-            <p class="card__paragraph"></p>
-            <p class="card__link"></p>
-          </div>
-        </div>
+        </div> -->
       </div>
       <div class="search-result__more-cards">
         <button type="button" class="search-result__button">Показать еще</button>
@@ -107,6 +90,6 @@
 			</ul>
 		</footer>
   </div>
-  <script src="scripts/index.ab0dcde76bdc6234be7b.js""></script>
+  <script src="scripts/index.222d482341851d2b1125.js"></script>
 </body>
 </html>
