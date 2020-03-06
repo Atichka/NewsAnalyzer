@@ -3,13 +3,13 @@
   margin: 80px 624px 80px 104px;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .analitic__week {
     margin: 64px 40px 40px 40px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .analitic__week {
     margin: 16px 16px 16px 24px;
   }

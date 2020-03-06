@@ -7,13 +7,32 @@
 
 .footer {
 	/* border: 1px solid red; */
-	max-width: 100%;
-	display: flex;
+  max-width: 100%;
+  max-width: 1440px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1024px) {
   .footer {
+    height: 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 64px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer {
+    height: 224px;
     display: block;
     position: relative;
   }
 }
+
+

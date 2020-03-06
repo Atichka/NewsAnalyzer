@@ -1,18 +1,7 @@
 .analitic__day {
   border: 1px solid #F5F6F7;
   max-width: 100%;
+  max-width: 1440px;
 
   background: #F5F6F7;
-}
-
-@media screen and (max-width: 768px) {
-  .analitic__day {
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .analitic__day {
-    max-width: 100%;
-  }
 }

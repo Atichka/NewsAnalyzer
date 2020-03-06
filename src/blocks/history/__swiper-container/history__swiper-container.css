@@ -1,22 +1,22 @@
-.swiper-container {
-  border: 1px solid red;
-	position: relative;
+.history__swiper-container {
+  position: relative;
   display: flex;
+  justify-content: center;
   margin-top: 64px;
   height: 288px;
 }
 
-.swiper-container::before {
+.history__swiper-container::before {
   left: 0;
   background: linear-gradient(-90deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
 }
 
-.swiper-container::after {
+.history__swiper-container::after {
   right: 0;
   background: linear-gradient(90deg, rgba(245, 246, 247, 0) 0%, #F5F6F7 100%);
 }
 
-.swiper-container::after, .swiper-container::before {
+.history__swiper-container::after, .history__swiper-container::before {
   content: '';
   width: 88px;
   height: 288px;
@@ -25,44 +25,44 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
-  .swiper-container {
+  .history__swiper-container {
     margin-top: 64px;
     max-width: 924px;
     max-height: 268px;
   }
-  .swiper-container::after, .history__swiper-container::before {
+  .history__swiper-container::after, .history__swiper-container::before {
     max-height: 268px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .swiper-container {
+  .history__swiper-container {
     margin-top: 32px;
     max-width: 672px;
     max-height: 242px;
   }
-  .swiper-container::after, .swiper-container::before {
+  .history__swiper-container::after, .history__swiper-container::before {
     max-height: 242px;
   }
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
-  .swiper-container {
+  .history__swiper-container {
     margin-top: 25px;
     max-width: 290px;
     max-height: 264px;
   }
-  .swiper-container::after, .swiper-container::before {
+  .history__swiper-container::after, .history__swiper-container::before {
     max-height: 264px;
   }
 }
 
-@media (min-width: 320px) and (max-width: 376px) {
-  .swiper-container {
+@media (min-width: 320px) and (max-width: 374px) {
+  .history__swiper-container {
     margin-top: 16px;
     max-width: 400px;
   }
-  .swiper-container::after, .swiper-container::before {
-    max-height: 268px;
+  .history__swiper-container::after, .history__swiper-container::before {
+    max-height: 288px;
   }
 }

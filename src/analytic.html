@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewsAnalyzer</title>
-  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.analytic.css %>">
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 
@@ -15,11 +15,9 @@
     <header class="header header__about">
       <a href="./index.html" class="header__logo header__logo_black">NewsAnalyzer</a>
       <ul class="menu">
-        <li class="menu__item">
-          <a href="./index.html" class="menu__page menu__grey">Главная</a>
+        <li class="menu__item"><a href="./index.html" class="menu__page menu__grey">Главная</a>
         </li>
-        <li class="menu__item">
-          <a href="./about.html" class="menu__about menu__black menu__action-black">О проекте</a>
+        <li class="menu__item menu__action-black"><a href="./about.html" class="menu__about menu__black">О проекте</a>
         </li>
       </ul>
     </header>
@@ -32,8 +30,8 @@
         <h3 class="analytic__week-title">Вы спросили: ""</h3>
         <p class="analytic__week-paragraph">Новостей за неделю: <span class="analytic__week-paragraph_bold"></span>
         </p>
-        <p class="analytic__week-paragraph">Упоминаний в заголовках: <span
-            class="analytic__week-paragraph_bold"></span></p>
+        <p class="analytic__week-paragraph">Упоминаний в заголовках: <span class="analytic__week-paragraph_bold"></span>
+        </p>
       </div>
       <div class="analitic__day">
         <h4 class="analytic__day-title">Аналитика по дням</h4>
@@ -53,39 +51,39 @@
             <div class="analytic__table-first-column">
               <p class="analytic__table-label">19, пн</p>
               <p class="analytic__table-label">20, вт</p>
-                <p class="analytic__table-label">21, ср</p>
-                <p class="analytic__table-label">22, чт</p>
-                <p class="analytic__table-label">23, пт</p>
-                <p class="analytic__table-label">24, сб</p>
-                <p class="analytic__table-label">25, вт</p>
+              <p class="analytic__table-label">21, ср</p>
+              <p class="analytic__table-label">22, чт</p>
+              <p class="analytic__table-label">23, пт</p>
+              <p class="analytic__table-label">24, сб</p>
+              <p class="analytic__table-label">25, вт</p>
             </div>
             <div class="analytic__table-second-column">
               <div class="analytic__table-graph">
                 <p class="analytic__table-graph-label">15</p>
               </div>
               <div class="analytic__table-graph">
-                  <p class="analytic__table-graph-label">18</p>
-                </div>
-                <div class="analytic__table-graph">
-                  <p class="analytic__table-graph-label">11</p>
-                </div>
-                <div class="analytic__table-graph">
-                  <p class="analytic__table-graph-label">39</p>
-                </div>
-                <div class="analytic__table-graph">
-                  <p class="analytic__table-graph-label">45</p>
-                </div>
-                <div class="analytic__table-graph">
-                  <p class="analytic__table-graph-label">73</p>
-                </div>
-                <div class="analytic__table-graph">
-                  <p class="analytic__table-graph-label">34</p>
-                </div>
+                <p class="analytic__table-graph-label">18</p>
+              </div>
+              <div class="analytic__table-graph">
+                <p class="analytic__table-graph-label">11</p>
+              </div>
+              <div class="analytic__table-graph">
+                <p class="analytic__table-graph-label">39</p>
+              </div>
+              <div class="analytic__table-graph">
+                <p class="analytic__table-graph-label">45</p>
+              </div>
+              <div class="analytic__table-graph">
+                <p class="analytic__table-graph-label">73</p>
+              </div>
+              <div class="analytic__table-graph">
+                <p class="analytic__table-graph-label">34</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-  </div>
+    </div>
   </section>
   <footer class="footer">
     <p class="footer__copyright">&#169; 2020 Supersite</p>
@@ -105,8 +103,7 @@
     </ul>
   </footer>
   </div>
-  </div>
-  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>""></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks.analytic.entry %>""></script>
 </body>
 
 </html>

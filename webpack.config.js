@@ -9,7 +9,7 @@ const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
   entry: {
-    main: './src/scripts/index.js',
+    index: './src/scripts/index.js',
     about: './src/scripts/about.js',
     analytic: './src/scripts/analytic.js',
   },
@@ -84,8 +84,8 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       inject: false,
-      template: 'src/analitic.html',
-      filename: 'analitic.html',
+      template: 'src/analytic.html',
+      filename: 'analytic.html',
       favicon: 'src/images/favicon.ico'
     }),
     new OptimizeCssAssetsPlugin({

@@ -9,13 +9,13 @@
   line-height: 1.5625rem;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 321px) and (max-width: 1023px) {
   .analytic__menu {
     margin: 32px 16px 0 40px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .analytic__menu {
     display: none;
   }

@@ -2,11 +2,11 @@
   display: none;
 }
 
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .history__button {
     width: 288px;
     height: 56px;
-    margin: 48px auto 32px auto;
+    margin: 24px auto 32px auto;
 
     border: 1px solid #1A1B22;
     box-sizing: border-box;

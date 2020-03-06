@@ -20,15 +20,15 @@
 	opacity: 0.8;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .footer__list-links {
-    margin-left: 20px;
+    margin-left: 42px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .footer__list-links {
     line-height: 2.5rem;
-    margin: 0;
+    margin-left: 25px;
   }
 }

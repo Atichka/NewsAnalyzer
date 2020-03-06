@@ -3,13 +3,13 @@
 @import url(./__text/not-found__text.css);
 
 .not-found {
+  /* border: 1px solid red; */
 	margin: 0;
-	display: none;
+  display: none;
 
 	overflow: hidden;
-	max-width: 100%;
+	max-width: 1440px;
   height: 374px;
-  position: relative;
 
 	background: #F5F6F7;
 }

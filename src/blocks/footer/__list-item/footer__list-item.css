@@ -1,24 +1,16 @@
 .footer__list-item {
 	/* border: 1px solid red; */
-  margin: 30px 0 28px 250px;
   padding: 0;
 
 	display: flex;
 	list-style-type: none;
 }
 
-@media screen and (max-width: 768px) {
-  .footer__list-item {
-    margin: 21px 0 21px 25px;
-  }
-}
-
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .footer__list-item {
     position: absolute;
     display: block;
     width: 184px;
     height: 120px;
-    margin: 0 120px 84px 16px;
   }
 }

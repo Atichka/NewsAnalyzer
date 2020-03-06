@@ -1,11 +1,3 @@
 .menu__black {
   color: #1A1B22;
-
-  text-decoration: none;
-	cursor: url(../../../images/Pointer.png), pointer;
-}
-
-.menu__black:hover {
-	transition: opacity 0.3s;
-	opacity: 0.8;
 }

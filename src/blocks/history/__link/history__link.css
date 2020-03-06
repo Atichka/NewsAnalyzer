@@ -1,4 +1,5 @@
 .history__link {
+  margin-left: 20px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -21,7 +22,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .history__link {
     display: none;
   }

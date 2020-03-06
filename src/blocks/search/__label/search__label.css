@@ -1,8 +1,6 @@
 .search__label {
-  width: 545px;
-	height: 48px;
-	margin-left: 416px;
-	margin-top: 32px;
+  width: 40%;
+	margin: 32px auto 0;
 
 	font-family: 'Roboto';
 	font-style: normal;
@@ -13,21 +11,17 @@
 	color: #FFFFFF;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .search__label {
-    width: 452px;
-    height: 72px;
-    margin-left: 160px;
-    margin-top: 16px;
+    width: 60%;
+    margin: 15px auto 0;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .search__label {
-    width: 288px;
-    height: 130px;
-    margin-left: 16px;
-    margin-top: 56px;
+    width: 90%;
+    margin: 56px auto 0;
     font-size: 1.25rem;
 	  line-height: 1.625rem;
   }

@@ -2,16 +2,31 @@
 @import url(./__paragraph/about__paragraph.css);
 
 .about {
+  /* border: 1px solid red; */
   margin: 80px 521px 94px 104px;
+  max-width: 100%;
+  max-width: 1440px;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 1250px) and (max-width: 1339px) {
+  .about {
+    margin: 65px 420px 76px 80px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1249px) {
+  .about {
+    margin: 50px 320px 66px 60px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
   .about {
     margin: 29px 40px 26px 40px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .about {
     margin: 16.46px 16px 24px 16px;
   }

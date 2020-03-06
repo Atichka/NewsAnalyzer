@@ -1,15 +1,10 @@
 .header__logo {
-  margin-left: 104px;
-	margin-top: auto;
-	margin-bottom: auto;
-
-	font-family: 'Roboto Slab';
+  margin: 0 0 0 104px;
+  font-family: 'Roboto Slab';
 	font-style: normal;
 	font-weight: bold;
 	font-size: 1.25rem;
 	line-height: 1.5rem;
-	display: flex;
-	align-items: center;
 
 	text-decoration: none;
 	cursor: url(../../../images/Pointer.png), pointer;
@@ -20,18 +15,14 @@
 	opacity: 0.8;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .header__logo {
-    margin-left: 40px;
-    font-size: 1.25rem;
-	  line-height: 1.5rem;
+    margin: 0 0 0 40px;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .header__logo {
-    margin-left: 16px;
-    font-size: 1rem;
-	  line-height: 1.5rem;
+    margin: 0 0 0 16px;
   }
 }

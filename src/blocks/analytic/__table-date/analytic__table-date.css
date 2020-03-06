@@ -1,4 +1,17 @@
 .analytic__table-date {
-  /* border: 1px solid red; */
+  /* border: 1px solid red */
   display: flex;
+  margin-right: 104px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .analytic__table-date {
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .analytic__table-date {
+    margin-right: 16px;
+  }
 }

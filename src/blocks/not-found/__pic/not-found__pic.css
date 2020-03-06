@@ -1,20 +1,4 @@
 .not-found__pic {
-	position: absolute;
-	top: 80px;
-	left: 672px;
-  right: 672px;
-}
-
-@media screen and (max-width: 768px) {
-  .not-found__pic {
-    left: 324px;
-    right: 324px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .not-found__pic {
-    left: 124px;
-    right: 124px;
-  }
+  display: block;
+	margin: 80px auto 0 auto;
 }
