@@ -16,7 +16,6 @@
 }
 
 .search__input:focus {
-  outline: none;
   color: #1A1B22;
 }
 
