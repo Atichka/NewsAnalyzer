@@ -12,10 +12,10 @@
 
 @media (min-width: 1024px) and (max-width: 1439px) {
   .card-list {
-      max-width: 910px;
-      margin-top: 32px;
-      grid-template-columns: 300px 300px 300px;
-      grid-gap: 12px;
+    max-width: 910px;
+    margin-top: 32px;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 12px;
   }
 }
 

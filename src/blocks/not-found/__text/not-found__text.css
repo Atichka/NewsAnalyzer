@@ -1,11 +1,9 @@
 .not-found__text {
-  width: 345px;
-	height: 48px;
 	margin-left: auto;
   margin-right: auto;
 	margin-top: 16px;
 
-	font-family: 'Roboto';
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 1.125rem;
