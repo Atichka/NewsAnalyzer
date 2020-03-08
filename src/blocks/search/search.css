@@ -7,6 +7,7 @@
 @import url(./__search-field/search__search-field.css);
 @import url(./__title/search__title.css);
 @import url(./__pic-container/search__pic-container.css);
+@import url(./__main/search__main.css);
 
 .search {
   /* border: 1px solid red; */
@@ -18,7 +19,13 @@
   background-repeat: no-repeat;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .search {
+    height: 500px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
   .search {
     background-image: url(../../images/main-pic768.png);
     height: 400px;

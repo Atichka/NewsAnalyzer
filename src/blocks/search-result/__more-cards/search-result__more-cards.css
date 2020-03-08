@@ -1,18 +1,9 @@
 .search-result__more-cards {
   margin-top: 64px;
-  margin-bottom: 80px;
 }
 
 @media screen and (max-width: 768px) {
   .search-result__more-cards {
     margin-top: 22px;
-    margin-bottom: 40px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .search-result__more-cards {
-    margin-top: 12.68px;
-    margin-bottom: 32px;
   }
 }

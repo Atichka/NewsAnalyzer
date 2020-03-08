@@ -22,13 +22,13 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .footer__list-links {
-    margin-left: 42px;
+    margin-left: 21px;
   }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
   .footer__list-links {
     line-height: 2.5rem;
-    margin-left: 25px;
+    margin-left: 0;
   }
 }

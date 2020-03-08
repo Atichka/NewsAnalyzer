@@ -1,34 +1,32 @@
 .search__input {
-  width: 50%;
+  width: 608px;
   height: 64px;
 
-	font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 1rem;
 	line-height: 1.375rem;
-	border: 0;
-  padding: 0;
-  border-radius: 100px;
-  padding-left: 24px;
 
-	color: #B6BCBF;
+  border-radius: 100px;
+  background-color: #FFFFFF;
+  padding-left: 25px;
 }
 
 .search__input:focus {
   color: #1A1B22;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 400px) and (max-width: 768px) {
   .search__input {
-    width: 60%;
+    width: 100%;
     height: 56px;
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 320px) {
   .search__input {
-    width: 93%;
-    margin-top: 17px;
+    width: 259px;
+    height: 56px;
   }
 }

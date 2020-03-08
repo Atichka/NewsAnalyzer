@@ -9,3 +9,7 @@
 	transition: opacity 0.3s;
 	opacity: 0.8;
 }
+
+.menu__grey:focus {
+	color: #1A1B22;
+}

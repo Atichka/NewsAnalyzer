@@ -32,6 +32,7 @@
     height: 224px;
     display: block;
     position: relative;
+    left: 16px;
   }
 }
 

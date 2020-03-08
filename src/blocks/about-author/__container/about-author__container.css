@@ -1,23 +1,21 @@
 .about-author__container {
 	/* border: 1px solid red; */
   display: flex;
-  margin: 80px auto 80px auto;
+  margin: 80px 216px 80px 104px;
   width: 100%;
   justify-content: center;
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
   .about-author__container {
-    margin: 42px 40px 4px;
-    width: calc(100% - 80px);
+    margin: 40px 40px 4px;
     justify-content: flex-start;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px)  {
   .about-author__container {
-    margin: 32px 24px 30px;
-    width: calc(100% - 30px);
+    margin: 20px 16px 44px;
     flex-direction: column;
   }
 }

@@ -1,4 +1,5 @@
 .analytic__table-graph-label {
+  display: flex;
   margin: 0;
   padding-left: 6px;
   align-self: center;
