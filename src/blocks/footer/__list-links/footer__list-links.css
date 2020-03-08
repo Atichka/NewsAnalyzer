@@ -29,6 +29,6 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .footer__list-links {
     line-height: 2.5rem;
-    margin-left: 0;
+    margin-left: 16px;
   }
 }
