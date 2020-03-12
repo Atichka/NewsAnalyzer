@@ -6,7 +6,8 @@
   .history__button {
     width: 288px;
     height: 56px;
-    margin: 24px auto auto auto;
+    padding: 0;
+    margin: 0;
 
     border: 1px solid #1A1B22;
     box-sizing: border-box;

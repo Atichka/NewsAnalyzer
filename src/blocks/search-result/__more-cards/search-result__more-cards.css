@@ -1,9 +1,11 @@
 .search-result__more-cards {
-  margin-top: 64px;
+  /* display: none; */
+  margin: 64px auto;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
   .search-result__more-cards {
-    margin-top: 22px;
-  }
+    margin: 22px auto;
+  } 
 }

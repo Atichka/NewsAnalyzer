@@ -18,12 +18,25 @@
 @import url(./__swiper-nav/history__swiper-nav.css);
 @import url(./__swiper-container/history__swiper-container.css);
 @import url(./__link-button/history__link-button.css);
+@import url(./__open-github/history__open-github.css);
 
 .history {
   border: 1px solid #F5F6F7;
   /* display: none; */
   max-width: 100%;
-  max-width: 1440px;
   background: #F5F6F7;
   padding-bottom: 32px;
+  margin-top: 80px;
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .history {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px)  {
+  .history {
+    margin-top: 30px;
+  }
 }

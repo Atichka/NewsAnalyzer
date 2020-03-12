@@ -1,6 +1,8 @@
 .search__input {
   width: 608px;
   height: 64px;
+  padding: 0;
+  margin: 0;
 
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-style: normal;

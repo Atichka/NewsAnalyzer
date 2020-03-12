@@ -1,15 +1,15 @@
-.menu__grey {
+.menu__color_grey {
   color: #B6BCBF;
 
   text-decoration: none;
 	cursor: url(../../../images/Pointer.png), pointer;
 }
 
-.menu__grey:hover {
+.menu__color_grey:hover {
 	transition: opacity 0.3s;
 	opacity: 0.8;
 }
 
-.menu__grey:focus {
+.menu__color_grey:focus {
 	color: #1A1B22;
 }

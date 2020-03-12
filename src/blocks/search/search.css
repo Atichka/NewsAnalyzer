@@ -11,7 +11,6 @@
 
 .search {
   /* border: 1px solid red; */
-  max-width: 1440px;
   height: 575px;
   background-image: url(../../images/main-pic.png);
   background-size: cover;

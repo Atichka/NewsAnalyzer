@@ -1,9 +1,9 @@
-.menu__black {
+.menu__color_black {
   color: #1A1B22;
   text-decoration: none;
 }
 
-.menu__black:hover {
+.menu__color_black:hover {
 	transition: opacity 0.3s;
 	opacity: 0.8;
 }

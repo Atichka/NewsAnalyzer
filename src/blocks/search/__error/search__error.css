@@ -3,13 +3,19 @@
   font-size: .8rem;
   line-height: 1.3rem;
   color: red;
-  position: absolute;
+  position: absolute; 
   bottom: -20px;
   left: 24px;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 321px) and (max-width: 767px) {
   .seach__error {
-    top: 80px;
+    top: 70px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .seach__error {
+    top: 60px;
   }
 }

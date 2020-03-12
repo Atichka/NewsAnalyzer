@@ -15,26 +15,27 @@
     <header class="header header__about">
       <a href="./index.html" class="header__logo header__logo_black">NewsAnalyzer</a>
       <ul class="menu">
-        <li class="menu__item"><a href="./index.html" class="menu__page menu__grey">Главная</a>
+        <li class="menu__item"><a href="./index.html" class="menu__main menu__color_grey">Главная</a>
         </li>
-        <li class="menu__item menu__action-black"><a href="./about.html" class="menu__about menu__black">О проекте</a>
+        <li class="menu__item menu__action-black"><a href="./about.html" class="menu__about menu__color_black">О проекте</a>
         </li>
       </ul>
     </header>
     <section class="about">
       <h1 class="about__title">Клиентам</h1>
       <p class="about__paragraph">Этот сайт — дипломный проект студента Яндекс.Практикума. Его цель — показать, чему
-        научился
-        студент, какими
-        технологиями владеет. <br><br>Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и
-        масштабируемым.
-        Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим
-        методологиям. Также сайт проще и дешевле поддерживать. <br><br>Карточки с новостями приходят с сервера и
+        научился студент, какими технологиями владеет.</p>
+      <p class="about__paragraph">Вёрстка сайта выполнена по методологии БЭМ. Это делает сайт гибким и
+        масштабируемым. Кроме того, добавлять новые страницы и функциональность проще и быстрее, чем в проектах, выполненных по другим
+        методологиям. Также сайт проще и дешевле поддерживать. </p>
+      <p class="about__paragraph">Карточки с новостями приходят с сервера и
         обрабатываются асинхронно. То есть сайт продолжает работать, пока от сервера приходит ответ. Это повышает
-        удобство использования сервиса. <br><br>При создании проекта была использована сборка технологией Webpack. Это
+        удобство использования сервиса. </p>
+      <p class="about__paragraph">При создании проекта была использована сборка технологией Webpack. Это
         современный подход к разработке сайтов. Код оптимизируется, а значит, сайт работает быстрее. Также сайт
         работает в старых браузерах. Даже если посетители — пользователи старых операционных систем, у них не будет
-        проблем с отображением. А значит, потенциальная аудитория возрастает. <br><br>Проект был проверен экспертами
+        проблем с отображением. А значит, потенциальная аудитория возрастает. </p>
+      <p class="about__paragraph">Проект был проверен экспертами
         Яндекс.Практикума. Если вашему бизнесу нужен сайт, мы рекомендуем обратиться к этому студенту.</p>
     </section>
     <section class="tech">
@@ -121,16 +122,20 @@
         <div class="history__slider-control history__button-next"></div>
       </div>
       <div class="swiper-pagination history__swiper-pagination"></div>
-      <button class="history__button">Открыть в GitHub</button>
+      <div class="history__open-github">
+        <button type="button" class="history__button">Открыть в GitHub</button>
+      </div>
     </section>
     <footer class="footer">
       <p class="footer__copyright">&#169; 2020 Екатерина Бурыгина</p>
-      <ul class="footer__list-item">
-        <li><a href="./index.html" class="footer__list-links">Главная</a></li>
-        <li><a href="./about.html" class="footer__list-links">О проекте</a></li>
-        <li><a href="https://praktikum.yandex.ru/profile/frontend-developer/"
-            class="footer__list-links">Яндекс.Практикум</a></li>
-      </ul>
+      <nav class="navigation">
+        <ul class="footer__list-item">
+          <li><a href="./index.html" class="footer__list-links">Главная</a></li>
+          <li><a href="./about.html" class="footer__list-links">О проекте</a></li>
+          <li><a href="https://praktikum.yandex.ru/profile/frontend-developer/"
+              class="footer__list-links">Яндекс.Практикум</a></li>
+        </ul>
+      </nav>
       <ul class="footer__list-item-block">
         <li><a href="https://www.facebook.com" class="footer__column-links">
             <img src="<%=require('./images/fb.png')%>" class="footer__icons" alt="Facebook">
