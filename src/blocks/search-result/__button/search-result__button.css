@@ -1,6 +1,8 @@
 .search-result__button {
 	padding: 0;
-	margin: 0;
+  margin: 0;
+  width: 288px;
+	height: 64px;
 
 	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 	font-style: normal;

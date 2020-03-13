@@ -6,7 +6,7 @@
 
 .search-result {
 	/* border: 1px solid red; */
-	/* display: none; */
+	display: none;
   width: 100%;
 	margin: 0;
   padding-top: 80px;
