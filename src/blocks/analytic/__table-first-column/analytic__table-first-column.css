@@ -1,0 +1,10 @@
+.analytic__table-first-column {
+  /* border: 1px solid red; */
+  width: 91px;
+}
+
+@media screen and (max-width: 320px) {
+  .analytic__table-first-column {
+    width: 120px;
+  }
+}

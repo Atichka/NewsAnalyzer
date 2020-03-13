@@ -1,0 +1,13 @@
+@import url(./__container/tech__container.css);
+@import url(./__list/tech__list.css);
+@import url(./__instrument/tech__instrument.css);
+@import url(./__name/tech__name.css);
+@import url(./__title/tech__title.css);
+@import url(./__logo/tech__logo.css);
+
+.tech {
+	border: 1px solid #F5F6F7;
+  max-width: 100%;
+
+	background: #F5F6F7;
+}

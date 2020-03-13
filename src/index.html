@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>NewsAnalyzer</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.index.css %>">
+  <link rel="icon" href="<%=require('./images/favicon.ico')%>" type="image/x-icon">
+</head>
+
+<body>
+  <div class="page">
+    <section class="search">
+      <header class="header header__page">
+        <a href="./index.html" class="header__logo header__logo_white">NewsAnalyzer</a>
+        <ul class="menu">
+          <li class="menu__item menu__item_action-white"><a href="./index.html" class="menu__main menu__color_white">Главная</a>
+          </li>
+          <li class="menu__item"><a href="./about.html" class="menu__about menu__color_grey">О проекте</a></li>
+        </ul>
+      </header>
+      <div class="search__main">
+        <h1 class="search__title">Что в мире творится?</h1>
+        <p class="search__label">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
+          прошедшую неделю.</p>
+        <form class="search__search-field" name="search">
+          <input class="search__input" type="text" placeholder="Введите тему новости" minlength='2' maxlength="20"
+            required />
+          <span id="inputError" class="seach__error"></span>
+          <button class="search__button">Искать</button>
+        </form>
+      </div>
+    </section>
+    <div class="preloader">
+      <i class="preloader__circle"></i>
+      <p class="preloader__message">Идет поиск новостей...</p>
+    </div>
+    <div class="not-found">
+      <img class="not-found__pic" src="<%=require('./images/not-found.png')%>" alt="Ничего не найдено">
+      <h2 class="not-found__title">Ничего не найдено</h2>
+      <p class="not-found__text">К сожалению по вашему запросу ничего<br> не найдено.</p>
+    </div>
+    <div class="search-result">
+      <div class="search-result__container">
+        <h2 class="search-result__title">Результаты поиска</h2>
+        <a class="search-result__link" href="./analytic.html">Посмотреть аналитику
+          <img class="search-result__pic" src="./images/back.png" alt="Посмотреть аналитику">
+        </a>
+      </div>
+      <div class="card-list">
+        <div class="card">
+          <img class="card__image" src="<%=require('./images/park.png')%>" alt="Описание фотографии">
+          <div class="card__text">
+            <h3 class="card__date">2 августа, 2019</h3>
+            <h2 class="card__title">Национальное достояние – парки</h2>
+            <p class="card__paragraph">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
+              складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к
+              природе.</p>
+            <p class="card__link">ЛЕНТА.РУ</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__image" src="<%=require('./images/fire.png')%>" alt="Описание фотографии">
+          <div class="card__text">
+            <h3 class="card__date">2 августа, 2019</h3>
+            <h2 class="card__title">Лесные огоньки: история одной фотографии</h2>
+            <p class="card__paragraph">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
+              запечатлеть ускользающую красоту одного из местных чудес природы.</p>
+            <p class="card__link">МЕДУЗА</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card__image" src="<%=require('./images/taiga.png')%>" alt="Описание фотографии">
+          <div class="card__text">
+            <h3 class="card__date">2 августа, 2019</h3>
+            <h2 class="card__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h2>
+            <p class="card__paragraph">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
+              необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
+            <p class="card__link">РИА</p>
+          </div>
+        </div>
+      </div>
+      <div class="search-result__more-cards">
+        <button type="button" class="search-result__button">Показать еще</button>
+      </div>
+    </div>
+    <section class="about-author">
+      <div class="about-author__container">
+        <img class="about-author__avatar" src="<%=require('./images/author-avatar.jpg')%>" alt="Фотография автора">
+        <div class="about-author__container-text">
+          <h2 class="title">Об авторе</h2>
+          <p class="paragraph">Здравствуйте! Меня зовут Бурыгина Екатерина, по образованию я инженер-программист. Прошла
+            курс фронтенд-разработки Яндекс.Практикума. В процессе обучения научилась использовать технологии, такие как
+            CSS, HTML, JS, GIT и Webpack.</p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+			<p class="footer__copyright">&#169; 2020 Екатерина Бурыгина</p>
+			<nav class="navigation">
+        <ul class="footer__list-item">
+          <li><a href="./index.html" class="footer__list-links">Главная</a></li>
+          <li><a href="./about.html" class="footer__list-links">О проекте</a></li>
+          <li><a href="https://praktikum.yandex.ru/profile/frontend-developer/"
+            class="footer__list-links">Яндекс.Практикум</a></li>
+        </ul>
+      </nav>
+			<ul class="footer__list-item-block">
+				<li><a href="https://www.facebook.com" class="footer__column-links">
+						<img src="<%=require('./images/fb.png')%>" class="footer__icons" alt="Facebook">
+					</a></li>
+				<li><a href="https://github.com" class="footer__column-links">
+						<img src="<%=require('./images/github.png')%>" class="footer__icons" alt="GitHub">
+					</a></li>
+			</ul>
+		</footer>
+  </div>
+  <script src="<%= htmlWebpackPlugin.files.chunks.index.entry %>"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+.history__swiper-nav {
+  /* border: 2px solid red; */
+  height: 18px;
+  width: 18px;
+  border-radius: 100%;
+  background: #D1D2D6;
+
+  /* cursor: url(../../../images/Pointer.png), pointer; */
+}
+
+.history__swiper-nav::after {
+  background: #1A1B22;
+}
+
+.history__swiper-nav:hover {
+	transition: opacity 0.3s;
+	opacity: 0.8;
+}

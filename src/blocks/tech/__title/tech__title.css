@@ -1,0 +1,24 @@
+.tech__title {
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 2.875rem;
+
+  color: #1A1B22;
+}
+
+@media screen and (max-width: 768px) {
+  .tech__title {
+    margin-right: 392px;
+    font-size: 1.875rem;
+    line-height: 2.125rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .tech__title {
+    font-size: 1.875rem;
+    line-height: 2.125rem;
+  }
+}

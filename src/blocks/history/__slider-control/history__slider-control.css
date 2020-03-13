@@ -1,0 +1,10 @@
+.history__slider-control {
+  width: 40px;
+  height: 41px;
+  position: absolute;
+  top: calc(50% - 16px);
+  background-image: url(../../../images/slider-control.png);
+  background-position: center -6px;
+  cursor: url(../../../images/Pointer.png), pointer;
+  z-index: 3;
+}

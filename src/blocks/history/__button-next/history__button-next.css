@@ -1,0 +1,10 @@
+.history__button-next {
+  transform: rotate(180deg);
+  right: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .history__button-next {
+    display: none;
+  }
+}

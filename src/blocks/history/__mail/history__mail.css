@@ -1,0 +1,12 @@
+.history__mail {
+  /* border: 1px solid red; */
+  margin-top: 0px;
+
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+
+  color: #1A1B22;
+}

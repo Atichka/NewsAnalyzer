@@ -1,0 +1,16 @@
+.history__swiper-slide {
+  /* border: 1px solid red; */
+  max-width: 400px;
+  margin-left: 16px;
+
+  background: #FFFFFF;
+  border-radius: 16px;
+  cursor: url(../../../images/Pointer.png), pointer;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .history__swiper-slide {
+    margin-left: 0;
+    max-height: 288px;
+  }
+}

@@ -1,0 +1,13 @@
+.history__name {
+  /* border: 1px solid red; */
+  margin-top: 4px;
+  margin-bottom: 0;
+
+  font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.625rem;
+  line-height: 1.875rem;
+
+  color: #1A1B22;
+}
