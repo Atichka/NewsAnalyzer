@@ -6,6 +6,7 @@
   background: #FFFFFF;
   border-radius: 16px;
   cursor: url(../../../images/Pointer.png), pointer;
+  text-decoration: none;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
