@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>NewsAnalyzer</title>
-  <link rel="stylesheet" href="./styles/style.1172960439691502ecea.css">
+  <link rel="stylesheet" href="./styles/style.938fe5a581a16808e12c.css">
   <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
 </head>
 
@@ -16,9 +16,9 @@
       <header class="header header__page">
         <a href="./index.html" class="header__logo header__logo_white">NewsAnalyzer</a>
         <ul class="menu">
-          <li class="menu__item menu__action-white"><a href="./index.html" class="menu__page menu__white">Главная</a>
+          <li class="menu__item menu__item_action-white"><a href="./index.html" class="menu__main menu__color_white">Главная</a>
           </li>
-          <li class="menu__item"><a href="./about.html" class="menu__page menu__grey">О проекте</a></li>
+          <li class="menu__item"><a href="./about.html" class="menu__about menu__color_grey">О проекте</a></li>
         </ul>
       </header>
       <div class="search__main">
@@ -42,6 +42,9 @@
       <h2 class="not-found__title">Ничего не найдено</h2>
       <p class="not-found__text">К сожалению по вашему запросу ничего<br> не найдено.</p>
     </div>
+    <div class="searchError">
+      <h2 class="searchError__title">Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз</h2>
+    </div>
     <div class="search-result">
       <div class="search-result__container">
         <h2 class="search-result__title">Результаты поиска</h2>
@@ -50,7 +53,7 @@
         </a>
       </div>
       <div class="card-list">
-        <div class="card">
+        <!-- <div class="card">
           <img class="card__image" src="./images/park.png" alt="Описание фотографии">
           <div class="card__text">
             <h3 class="card__date">2 августа, 2019</h3>
@@ -80,7 +83,7 @@
               необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
             <p class="card__link">РИА</p>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="search-result__more-cards">
         <button type="button" class="search-result__button">Показать еще</button>
@@ -99,12 +102,14 @@
     </section>
     <footer class="footer">
 			<p class="footer__copyright">&#169; 2020 Екатерина Бурыгина</p>
-			<ul class="footer__list-item">
-				<li><a href="./index.html" class="footer__list-links">Главная</a></li>
-				<li><a href="./about.html" class="footer__list-links">О проекте</a></li>
-				<li><a href="https://praktikum.yandex.ru/profile/frontend-developer/"
-						class="footer__list-links">Яндекс.Практикум</a></li>
-			</ul>
+			<nav class="navigation">
+        <ul class="footer__list-item">
+          <li><a href="./index.html" class="footer__list-links">Главная</a></li>
+          <li><a href="./about.html" class="footer__list-links">О проекте</a></li>
+          <li><a href="https://praktikum.yandex.ru/profile/frontend-developer/"
+            class="footer__list-links">Яндекс.Практикум</a></li>
+        </ul>
+      </nav>
 			<ul class="footer__list-item-block">
 				<li><a href="https://www.facebook.com" class="footer__column-links">
 						<img src="./images/fb.png" class="footer__icons" alt="Facebook">
@@ -115,7 +120,7 @@
 			</ul>
 		</footer>
   </div>
-  <script src="scripts/index.222d482341851d2b1125.js"></script>
+  <script src="scripts/index.348c258c19959410dce0.js"></script>
 </body>
 
 </html>
