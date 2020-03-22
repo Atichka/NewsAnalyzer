@@ -23,7 +23,7 @@ var mySwiper = new Swiper('.swiper-container', {
   },
 })
 
-class Commit {
+class CommitCard {
   constructor(date, avatar_url, name, email, message, url) {
     this.commitElement = this.create(date, avatar_url, name, email, message, url);
   }
@@ -68,14 +68,14 @@ class CommitList {
   }
 
   addCommit(date, avatar_url, name, email, message, url) {
-    const { commitElement } = new Commit(date, avatar_url, name, email, message, url);
+    const { commitElement } = new CommitCard(date, avatar_url, name, email, message, url);
     this.container.appendChild(commitElement);
   }
 }
 
 const apiGitHub = new ApiGitHub('https://api.github.com/repos/Atichka/NewsAnalyzer/commits');
 const commitsList = new CommitList(document.querySelector('.history__swiper-wrapper'));
-let months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
+const months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
 
 apiGitHub.getCommits()
   .then(result => {

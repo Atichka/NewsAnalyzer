@@ -18,7 +18,7 @@ class CardList {
   }
 
   addCard(urlToImage, publishedAt, description, title, link) {
-    const { cardElement } = new Card(urlToImage, publishedAt, description, title, link);
+    const { cardElement } = new NewsCard(urlToImage, publishedAt, description, title, link);
     this.container.appendChild(cardElement);
   }
 
@@ -39,7 +39,7 @@ class CardList {
   }
 }
 
-class Card {
+class NewsCard {
   constructor(urlToImage, publishedAt, description, title, link) {
     this.cardElement = this.create(urlToImage, publishedAt, description, title, link);
   }
