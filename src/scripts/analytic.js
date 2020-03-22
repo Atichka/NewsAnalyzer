@@ -72,7 +72,7 @@ const totalPhraz = document.querySelector('.analytic__phraz-sum');
 const month = document.querySelector('.analytic__month');
 
 const word = localStorage.getItem('query');
-let months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 const nowDate = new Date();
 
 // Миллисекунд в дне
