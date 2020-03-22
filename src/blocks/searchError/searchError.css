@@ -1,0 +1,9 @@
+@import url(./__title/searchError__title.css);
+
+.searchError {
+  margin: 0;
+  display: none;
+  height: 374px;
+
+	background: #F5F6F7;
+}
