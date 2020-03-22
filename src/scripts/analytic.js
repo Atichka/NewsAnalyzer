@@ -24,8 +24,8 @@ class Analytic {
 
   // Заполнение дней недели в табличку
   renderDatesGraph(datesShort) {
-    const labelDate = document.querySelectorAll('.analytic__table-label');
-    labelDate.forEach(function (i, item) {
+    const datesGraph = document.querySelectorAll('.analytic__table-label');
+    datesGraph.forEach(function (i, item) {
       i.textContent = datesShort[item];
     });
   }
@@ -44,8 +44,8 @@ class Analytic {
   }
 
   renderGraph(cardsDates, datesShort) {
-    const labelGraph = document.querySelectorAll('.analytic__table-graph-label');
-    const widthGraph = document.querySelectorAll('.analytic__table-graph');
+    const graphsTexts = document.querySelectorAll('.analytic__table-graph-label');
+    const graphs = document.querySelectorAll('.analytic__table-graph');
 
     //Разбиение на 7 строк
     function addGraph() {
@@ -55,9 +55,9 @@ class Analytic {
           return item === datesShort[i]
         })
 
-        labelGraph[i].textContent = a.length;
-        widthGraph[i].style.width = `${a.length}%`;
-        widthGraph[i].style.background = '#2F71E5';
+        graphsTexts[i].textContent = a.length;
+        graphs[i].style.width = `${a.length}%`;
+        graphs[i].style.background = '#2F71E5';
       }
     }
     addGraph();
