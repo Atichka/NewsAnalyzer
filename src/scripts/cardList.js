@@ -1,8 +1,7 @@
-import {NewsCard} from "./newsCard.js";
-
 class CardList {
-  constructor(container) {
+  constructor(container, cardElement) {
     this.container = container;
+    this.cardElement = cardElement;
     this.lastCard = 0;
   }
 
@@ -17,8 +16,8 @@ class CardList {
   }
 
   addCard(urlToImage, publishedAt, description, title, link) {
-    const { cardElement } = new NewsCard(urlToImage, publishedAt, description, title, link);
-    this.container.appendChild(cardElement);
+    const card = this.cardElement.create(urlToImage, publishedAt, description, title, link);
+    this.container.appendChild(card);
   }
 
   clear() {

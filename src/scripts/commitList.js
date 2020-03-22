@@ -1,8 +1,7 @@
-import {CommitCard} from "./commitCard.js";
-
 class CommitList {
-  constructor(container) {
+  constructor(container, commitElement) {
     this.container = container;
+    this.commitElement = commitElement;
   }
 
   render(commits) {
@@ -14,8 +13,8 @@ class CommitList {
   }
 
   addCommit(date, avatar_url, name, email, message, url) {
-    const { commitElement } = new CommitCard(date, avatar_url, name, email, message, url);
-    this.container.appendChild(commitElement);
+    const commit = this.commitElement.create(date, avatar_url, name, email, message, url);
+    this.container.appendChild(commit);
   }
 }
 

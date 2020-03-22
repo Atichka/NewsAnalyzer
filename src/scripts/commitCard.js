@@ -1,5 +1,3 @@
-import {months} from "./about.js";
-
 class CommitCard {
   constructor(date, avatar_url, name, email, message, url) {
     this.commitElement = this.create(date, avatar_url, name, email, message, url);
@@ -19,7 +17,7 @@ class CommitCard {
       <p class="history__text"></p>
     </a>`)
     const newDate = new Date(date);
-    element.querySelector('.history__date').textContent = newDate.getDate() + " " + months[newDate.getMonth()] + ", " + newDate.getFullYear();
+    element.querySelector('.history__date').textContent = `${newDate.toLocaleString("ru", { day: "numeric", month: 'long' })}, ${newDate.toLocaleString("ru", { year: 'numeric' })}`;
     element.querySelector('.history__avatar').style.backgroundImage = 'url(' + avatar_url + ')';
     element.querySelector('.history__name').textContent = name;
     element.querySelector('.history__mail').textContent = email;

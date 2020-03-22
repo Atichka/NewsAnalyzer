@@ -1,13 +1,14 @@
 import '../pages/about.css';
 import {ApiGitHub} from "./apiGitHub.js";
 import {CommitList} from "./commitList.js";
+import {CommitCard} from "./commitCard.js";
 
 import '../../node_modules/swiper/js/swiper.min.js';
 import Swiper from 'swiper';
 
 const apiGitHub = new ApiGitHub('https://api.github.com/repos/Atichka/NewsAnalyzer/commits');
-const commitsList = new CommitList(document.querySelector('.history__swiper-wrapper'));
-const months = ["Января", "Февраля", "Марта", "Апреля", "Мая", "Июня", "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"];
+const commitCard = new CommitCard();
+const commitsList = new CommitList(document.querySelector('.history__swiper-wrapper'), commitCard);
 
 setTimeout(function () {
   swiper.update();
@@ -41,4 +42,3 @@ const swiper = new Swiper('.swiper-container', {
   },
 })
 
-export{months}

@@ -1,6 +1,7 @@
 import '../pages/index.css';
 import {ApiCard} from "./apiCard.js";
 import {CardList} from "./cardList.js";
+import { NewsCard } from './newsCard';
 
 const buttonSend = document.querySelector('.search__button');
 const error = document.querySelector('.seach__error');
@@ -18,7 +19,8 @@ const from = new Date(to.getTime() - (7 * 24 * 60 * 60 * 1000));
 const apiKey = "276475815ef54247935ea6bc2810abdb";
 
 const apiCard = new ApiCard(main_url, apiKey);
-const cardlist = new CardList(cardContainer);
+const card = new NewsCard();
+const cardlist = new CardList(cardContainer, card);
 
 function sendForm(event) {
   localStorage.clear();
