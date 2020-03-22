@@ -1,69 +1,6 @@
 import '../pages/index.css';
 import {ApiCard} from "./apiCard.js";
-
-class CardList {
-  constructor(container) {
-    this.container = container;
-    this.lastCard = 0;
-  }
-
-  render(cards) {
-    const articles = cards;
-    for (let i = this.lastCard; i < Math.min(this.lastCard + 3, articles.length); i++) {
-      const article = articles[i];
-      this.addCard(article.urlToImage, article.publishedAt.split('T')[0].split("-").reverse().join("."), article.description, article.title, article.source.name);
-    }
-    this.lastCard = this.lastCard + 3;
-    this.check(cards);
-  }
-
-  addCard(urlToImage, publishedAt, description, title, link) {
-    const { cardElement } = new NewsCard(urlToImage, publishedAt, description, title, link);
-    this.container.appendChild(cardElement);
-  }
-
-  clear() {
-    while (this.container.firstChild) {
-      this.container.removeChild(this.container.firstChild);
-    }
-    this.lastCard = 0;
-  }
-
-  check(cards) {
-    if (this.lastCard < cards.length) {
-      moreCard.style = 'display: block;';
-      moreCard.onclick = () =>  this.render(cards);
-    } else {
-      moreCard.style = 'display: none;';
-    }
-  }
-}
-
-class NewsCard {
-  constructor(urlToImage, publishedAt, description, title, link) {
-    this.cardElement = this.create(urlToImage, publishedAt, description, title, link);
-  }
-
-  create (urlToImage, publishedAt, description, title, link) {
-    const element = document.createRange().createContextualFragment(`<div class="card">
-      <div class="card__image"></div>
-      <div class="card__text">
-        <h3 class="card__date"></h3>
-        <h2 class="card__title"></h2>
-        <p class="card__paragraph"></p>
-        <p class="card__link"></p>
-      </div>
-    </div>`)
-    if (urlToImage != null) {
-      element.querySelector('.card__image').style.backgroundImage = 'url(' + urlToImage + ')';
-    }
-    element.querySelector('.card__date').textContent = publishedAt;
-    element.querySelector('.card__paragraph').textContent = description;
-    element.querySelector('.card__title').textContent = title;
-    element.querySelector('.card__link').textContent = link;
-    return element;
-  }
-}
+import {CardList} from "./cardList.js";
 
 const buttonSend = document.querySelector('.search__button');
 const error = document.querySelector('.seach__error');
@@ -72,7 +9,6 @@ const cardContainer = document.querySelector('.card-list');
 const searchResult = document.querySelector('.search-result');
 const preloader = document.querySelector('.preloader');
 const notFound = document.querySelector('.not-found');
-const moreCard = document.querySelector('.search-result__more-cards')
 const form = document.querySelector('.search__search-field');
 const searchError = document.querySelector('.searchError__title');
 
