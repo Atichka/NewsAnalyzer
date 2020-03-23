@@ -40,6 +40,7 @@ function sendForm(event) {
     })
     .catch(err => {
       console.log(`Ошибка: ${err}`);
+      preloader.style = 'display: none;';
       searchError.style = 'display: block;';
     })
   } else {
