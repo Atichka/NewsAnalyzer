@@ -9,13 +9,13 @@ class CardList {
     const articles = cards;
     for (let i = this.lastCard; i < Math.min(this.lastCard + 3, articles.length); i++) {
       const article = articles[i];
-      this.addCard(article.urlToImage, article.publishedAt.split('T')[0].split("-").reverse().join("."), article.description, article.title, article.source.name);
+      this._addCard(article.urlToImage, article.publishedAt.split('T')[0].split("-").reverse().join("."), article.description, article.title, article.source.name);
     }
     this.lastCard = this.lastCard + 3;
-    this.check(cards);
+    this._check(cards);
   }
 
-  addCard(urlToImage, publishedAt, description, title, link) {
+  _addCard(urlToImage, publishedAt, description, title, link) {
     const card = this.cardElement.create(urlToImage, publishedAt, description, title, link);
     this.container.appendChild(card);
   }
@@ -27,7 +27,7 @@ class CardList {
     this.lastCard = 0;
   }
 
-  check(cards) {
+  _check(cards) {
     const moreCard = document.querySelector('.search-result__more-cards')
     if (this.lastCard < cards.length) {
       moreCard.style = 'display: block;';
