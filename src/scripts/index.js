@@ -1,25 +1,9 @@
 import '../pages/index.css';
-import {ApiCard} from "./apiCard.js";
-import {CardList} from "./cardList.js";
-import { NewsCard } from './newsCard';
-
-const buttonSend = document.querySelector('.search__button');
-const error = document.querySelector('.seach__error');
-const inputSend = document.querySelector('.search__input');
-const cardContainer = document.querySelector('.card-list');
-const searchResult = document.querySelector('.search-result');
-const preloader = document.querySelector('.preloader');
-const notFound = document.querySelector('.not-found');
-const form = document.querySelector('.search__search-field');
-const searchError = document.querySelector('.searchError__title');
-
-const main_url = "http://newsapi.org/v2/everything?";
-const to = new Date();
-const from = new Date(to.getTime() - (7 * 24 * 60 * 60 * 1000));
-const apiKey = "276475815ef54247935ea6bc2810abdb";
+import {ApiCard} from "./api/apiCard.js";
+import {CardList} from "./modules/cardList.js";
+import {card, buttonSend, error, inputSend, cardContainer, searchResult, preloader, notFound, searchError, to, from, main_url, apiKey} from "./constants/constants.js";
 
 const apiCard = new ApiCard(main_url, apiKey);
-const card = new NewsCard();
 const cardlist = new CardList(cardContainer, card);
 
 function sendForm(event) {

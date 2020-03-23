@@ -1,18 +1,6 @@
 import '../pages/analytic.css';
-import {DataGraph} from "./dataGraph.js";
-
-const query = document.querySelector('.analytic__week-query');
-const res = JSON.parse(localStorage.getItem('res'));
-const totalRes = document.querySelector('.analytic__week-sum');
-const totalPhraz = document.querySelector('.analytic__phraz-sum');
-const month = document.querySelector('.analytic__month');
-
-const word = localStorage.getItem('query');
-const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-const nowDate = new Date();
-
-// Миллисекунд в дне
-const DAY_IN_MS = 86400000;
+import {DataGraph} from "./modules/dataGraph.js";
+import {DAY_IN_MS, nowDate, months, word, month, query, res, totalRes, totalPhraz} from "./constants/constants.js"
 
 // Введенное слово
 query.textContent = '«' + localStorage.getItem('query') + '»';
