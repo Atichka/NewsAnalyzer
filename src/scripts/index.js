@@ -29,6 +29,8 @@ function sendForm(event) {
   searchResult.style = 'display: none;';
   notFound.style = 'display: none;';
   preloader.style = 'display: block;';
+  inputSend.disabled = true;
+  buttonSend.disabled = true;
 
   if (validateInput()) {
     apiCard.getCard(from.toISOString(), to.toISOString(), inputSend.value)
@@ -37,15 +39,20 @@ function sendForm(event) {
       sendData(inputSend.value, result);
       console.log(result);
       preloader.style = 'display: none;';
+      inputSend.disabled = false;
+      buttonSend.disabled = false;
     })
     .catch(err => {
       console.log(`Ошибка: ${err}`);
       preloader.style = 'display: none;';
       searchError.style = 'display: block;';
+
     })
   } else {
     preloader.style = 'display: none;';
     searchResult.style = 'display: none;';
+    inputSend.disabled = false;
+    buttonSend.disabled = false;
   }
 }
 
