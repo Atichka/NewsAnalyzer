@@ -13,7 +13,9 @@ const searchError = document.querySelector('.searchError__title');
 
 const main_url = "http://newsapi.org/v2/everything?";
 const to = new Date();
-const from = new Date(to.getTime() - (7 * 24 * 60 * 60 * 1000));
+// Миллисекунд в дне
+const DAY_IN_MS = 86400000;
+const from = new Date(to.getTime() - DAY_IN_MS);
 const apiKey = "276475815ef54247935ea6bc2810abdb";
 const card = new NewsCard();
 
@@ -28,7 +30,8 @@ const month = document.querySelector('.analytic__month');
 const word = localStorage.getItem('query');
 const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 const nowDate = new Date();
-// Миллисекунд в дне
-const DAY_IN_MS = 86400000;
 
-export {DAY_IN_MS, nowDate, months, word, month, totalPhraz, totalRes, res, query, commitCard, apiGitHub, card, buttonSend, error, inputSend, cardContainer, searchResult, preloader, notFound, searchError, main_url, to, from, apiKey}
+const weekday = 7;
+const showCard = 3;
+
+export {showCard, weekday, DAY_IN_MS, nowDate, months, word, month, totalPhraz, totalRes, res, query, commitCard, apiGitHub, card, buttonSend, error, inputSend, cardContainer, searchResult, preloader, notFound, searchError, main_url, to, from, apiKey}

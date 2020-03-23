@@ -1,3 +1,5 @@
+import {weekday} from "../constants/constants.js";
+
 class DataGraph {
   constructor(res) {
     this.res = res;
@@ -6,7 +8,7 @@ class DataGraph {
   getDates(nowDate, DAY_IN_MS) {
     const dates = [nowDate];
     function add(dates) {
-      for (let i = 1; i < 7; i++) {
+      for (let i = 0; i < weekday; i++) {
         dates.unshift(new Date(nowDate - DAY_IN_MS * i));
       }
     };
@@ -43,10 +45,9 @@ class DataGraph {
     const graphsTexts = document.querySelectorAll('.analytic__table-graph-label');
     const graphs = document.querySelectorAll('.analytic__table-graph');
 
-    //Разбиение на 7 строк
     function addGraph() {
 
-      for (let i = 0; i < 7; i++) {
+      for (let i = 0; i < weekday; i++) {
         const a = cardsDates.filter(function (item) {
           return item === datesShort[i]
         })

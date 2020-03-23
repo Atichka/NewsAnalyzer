@@ -1,3 +1,5 @@
+import {showCard} from "../constants/constants.js"
+
 class CardList {
   constructor(container, cardElement) {
     this.container = container;
@@ -7,11 +9,11 @@ class CardList {
 
   render(cards) {
     const articles = cards;
-    for (let i = this.lastCard; i < Math.min(this.lastCard + 3, articles.length); i++) {
+    for (let i = this.lastCard; i < Math.min(this.lastCard + showCard, articles.length); i++) {
       const article = articles[i];
       this._addCard(article.urlToImage, article.publishedAt.split('T')[0].split("-").reverse().join("."), article.description, article.title, article.source.name);
     }
-    this.lastCard = this.lastCard + 3;
+    this.lastCard = this.lastCard + showCard;
     this._check(cards);
   }
 
