@@ -1,82 +1,6 @@
 import '../pages/analytic.css';
-
-class Analytic {
-  constructor(res) {
-    this.res = res;
-  }
-
-  getDates(nowDate, DAY_IN_MS) {
-    const dates = [nowDate];
-    function add(dates) {
-      for (let i = 1; i < 7; i++) {
-        dates.unshift(new Date(nowDate - DAY_IN_MS * i));
-      }
-    };
-    add(dates)
-
-    // Изменение формата даты
-    const datesShort = dates.map(function (item) {
-      item = `${item.toLocaleString("ru", { day: "numeric" })}, ${item.toLocaleString("ru", { weekday: 'short' })}`;
-      return item;
-    })
-    return datesShort;
-  }
-
-  // Заполнение дней недели в табличку
-  renderDatesGraph(datesShort) {
-    const labelDate = document.querySelectorAll('.analytic__table-label');
-    labelDate.forEach(function (i, item) {
-      i.textContent = datesShort[item];
-    });
-  }
-
-  cardDates() {
-    this.res.articles.forEach(function (item, i) {
-      item.publishedAt = new Date(item.publishedAt)
-    });
-
-
-    const cardsDates = this.res.articles.map(function (item) {
-      item.publishedAt = `${item.publishedAt.toLocaleString("ru", { day: "numeric" })}, ${item.publishedAt.toLocaleString("ru", { weekday: 'short' })}`
-      return item.publishedAt
-    })
-    return cardsDates;
-  }
-
-  renderGraph(cardsDates, datesShort) {
-    const labelGraph = document.querySelectorAll('.analytic__table-graph-label');
-    const widthGraph = document.querySelectorAll('.analytic__table-graph');
-
-    //Разбиение на 7 строк
-    function addGraph() {
-
-      for (let i = 0; i < 7; i++) {
-        const a = cardsDates.filter(function (item) {
-          return item === datesShort[i]
-        })
-
-        labelGraph[i].textContent = a.length;
-        widthGraph[i].style.width = `${a.length}%`;
-        widthGraph[i].style.background = '#2F71E5';
-      }
-    }
-    addGraph();
-  }
-
-}
-
-const query = document.querySelector('.analytic__week-query');
-const res = JSON.parse(localStorage.getItem('res'));
-const totalRes = document.querySelector('.analytic__week-sum');
-const totalPhraz = document.querySelector('.analytic__phraz-sum');
-const month = document.querySelector('.analytic__month');
-
-const word = localStorage.getItem('query');
-let months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
-const nowDate = new Date();
-
-// Миллисекунд в дне
-const DAY_IN_MS = 86400000;
+import {DataGraph} from "./modules/dataGraph.js";
+import {DAY_IN_MS, nowDate, months, word, month, query, res, totalRes, totalPhraz} from "./constants/constants.js"
 
 // Введенное слово
 query.textContent = '«' + localStorage.getItem('query') + '»';
@@ -116,7 +40,7 @@ function searchMonth(res) {
   return months[date.getMonth()];
 }
 
-const analitic = new Analytic(res);
+const analitic = new DataGraph(res);
 const datesShort = analitic.getDates(nowDate, DAY_IN_MS);
 analitic.renderDatesGraph(datesShort);
 const cardsDates = analitic.cardDates();

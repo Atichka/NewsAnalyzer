@@ -27,16 +27,24 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
+            options: { publicPath: '../', },
+          },
+          {
+            loader: 'css-loader',
+            options: { importLoaders: 1 },
+          },
+          {
+            loader: 'postcss-loader',
             options: {
-              publicPath: '../',
+              config: {
+                path: __dirname + '/postcss.config.js'
+              }
             },
           },
-          'css-loader',
-          'postcss-loader',
         ]
       },
       {
