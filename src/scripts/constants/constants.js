@@ -11,7 +11,7 @@ const preloader = document.querySelector('.preloader');
 const notFound = document.querySelector('.not-found');
 const searchError = document.querySelector('.searchError__title');
 
-const main_url = "http://newsapi.org/v2/everything?";
+const main_url = NODE_ENV === 'development' ? 'http://newsapi.org/v2/everything?' : 'https://newsapi.org/v2/everything?';
 const to = new Date();
 // Миллисекунд в дне
 const DAY_IN_MS = 86400000;
