@@ -2,7 +2,6 @@ import '../pages/about.css';
 import {CommitList} from "./modules/commitList.js";
 import {apiGitHub, commitCard} from "./constants/constants.js"
 
-import '../../node_modules/swiper/js/swiper.min.js';
 import Swiper from 'swiper';
 
 const commitsList = new CommitList(document.querySelector('.history__swiper-wrapper'), commitCard);
