@@ -15,7 +15,7 @@
 
 ---
 
-Демонстрация работы проекта https://yadi.sk/i/UE1GTzaK2EZ5Qg
+Демонстрация работы проекта: https://yadi.sk/i/UE1GTzaK2EZ5Qg
 
 ---
 
