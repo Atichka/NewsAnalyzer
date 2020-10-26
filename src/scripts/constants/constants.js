@@ -11,7 +11,7 @@ const preloader = document.querySelector('.preloader');
 const notFound = document.querySelector('.not-found');
 const searchError = document.querySelector('.searchError__title');
 
-const main_url = NODE_ENV === 'development' ? 'http://newsapi.org/v2/top-headlines?' : 'https://newsapi.org/v2/top-headlines?';
+const main_url = NODE_ENV === 'development' ? 'http://nomoreparties.co/news/v2/top-headlines?' : 'https://nomoreparties.co/news/v2/top-headlines?';
 const to = new Date();
 // Миллисекунд в дне
 const DAY_IN_MS = 86400000;
